@@ -30,9 +30,9 @@ Enter Options
 </pre>
 
 ## Operating Systems Tested
-- Kali Linux 2020.1
+- Kali Linux 2021, 2020
 - Windows 10
-- Ubuntu 19.10
+- Ubuntu LTS
 
 ## Install
 ```bash , Zsh , Sh
