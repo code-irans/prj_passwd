@@ -34,12 +34,20 @@ Enter Options
 - Windows 10
 - Ubuntu LTS
 
-## Install
+## Install Liunx Debian Base
 ```bash , Zsh , Sh
 git clone https://github.com/code-irans/prj_passwd
 cd prj_passwd
 pip3 install -r requirements.txt
 python3 mekar_pass.py
+```
+
+## Install Windows 10
+```bash , Zsh , Sh
+Dowload To Github : https://github.com/code-irans/prj_passwd
+cd prj_passwd
+pip install -r requirements.txt
+python mekar_pass.py
 ```
 
 ### Thanks to
