@@ -44,7 +44,7 @@ python3 mekar_pass.py
 
 ## Install Windows 10
 ```bash , Zsh , Sh
-Dowload To Github : https://github.com/code-irans/prj_passwd
+Dowload To Github : https://github.com/code-irans/prj_passwd/archive/refs/heads/main.zip
 cd prj_passwd
 pip install -r requirements.txt
 python mekar_pass.py
