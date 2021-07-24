@@ -31,7 +31,7 @@ Enter Options
 
 ## Operating Systems Tested
 - Liunx
-- Windows 10
+- Windows Microsoft
 - Mac Os
 
 ## Install Liunx && OSx
@@ -42,7 +42,7 @@ pip3 install -r requirements.txt
 python3 mekar_pass.py
 ```
 
-## Install Windows 10
+## Install Windows
 ```bash , Zsh , Sh
 Dowload To Github : https://github.com/code-irans/prj_passwd/archive/refs/heads/main.zip
 extract File 'main.zip'
