@@ -30,12 +30,12 @@ Enter Options
 </pre>
 
 ## Operating Systems Tested
-- Kali Linux 2021, 2020
+- Liunx
 - Windows 10
-- Ubuntu LTS
+- Mac Os
 
-## Install Liunx Debian Base
-```bash , Zsh , Sh
+## Install Liunx && OSx
+```Bash, Zsh
 git clone https://github.com/code-irans/prj_passwd
 cd prj_passwd
 pip3 install -r requirements.txt
