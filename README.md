@@ -46,7 +46,7 @@ python3 mekar_pass.py
 ```bash , Zsh , Sh
 Dowload To Github : https://github.com/code-irans/prj_passwd/archive/refs/heads/main.zip
 extract File 'main.zip'
-cd prj_passwd
+cd prj_passwd-main
 pip install -r requirements.txt
 python mekar_pass.py
 ```
