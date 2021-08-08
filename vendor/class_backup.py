@@ -1,5 +1,14 @@
 from colorama import Fore
-import time
+import time, os
+
+banner = Fore.LIGHTYELLOW_EX+"""
+    ██████╗  █████╗ ███████╗███████╗██╗    ██╗ ██████╗ ██████╗ ██████╗     ███╗   ███╗ █████╗ ██╗  ██╗███████╗██████╗ 
+    ██╔══██╗██╔══██╗██╔════╝██╔════╝██║    ██║██╔═══██╗██╔══██╗██╔══██╗    ████╗ ████║██╔══██╗██║ ██╔╝██╔════╝██╔══██╗
+    ██████╔╝███████║███████╗███████╗██║ █╗ ██║██║   ██║██████╔╝██║  ██║    ██╔████╔██║███████║█████╔╝ █████╗  ██████╔╝
+    ██╔═══╝ ██╔══██║╚════██║╚════██║██║███╗██║██║   ██║██╔══██╗██║  ██║    ██║╚██╔╝██║██╔══██║██╔═██╗ ██╔══╝  ██╔══██╗
+    ██║     ██║  ██║███████║███████║╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝    ██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗██║  ██║
+    ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝     ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+"""
 
 def __backup__():
     a = open("logs/work/passwd.key" , "r").read()
@@ -14,6 +23,10 @@ def __backup__():
         print(Fore.GREEN+"Please Save Password...")
 
         time.sleep(3)
+
+        os.system("cls" or "clear")
+
+        print(banner)
 
         print(Fore.LIGHTGREEN_EX+"Succsessful Save Passowrd!")
 
@@ -38,8 +51,16 @@ def __backup__():
 
                 time.sleep(3)
 
+                os.system("cls" or "clear")
+
+                print(banner)
+
                 print(Fore.LIGHTGREEN_EX+"Succsessful Backup Passowrd!")
         else:
+            os.system("cls" or "clear")
+
+            print(banner)
+
             print(Fore.RED+"Not Login System Backup!")
 
 
