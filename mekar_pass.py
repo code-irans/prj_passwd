@@ -7,6 +7,7 @@ import time
 
 from vendor import class_backup
 from vendor import class_updates
+from vendor import class_reset
 
 char = string.ascii_letters + string.punctuation + string.digits
 
@@ -37,6 +38,8 @@ def passwd(txt , max):
 
     os.system("cls" or "clear")
 
+    print(banner)
+
     time.sleep(0.1)
     print(Fore.YELLOW+"[1] " +Fore.GREEN+"This Your Password : ", txt + password_1 + max)
     time.sleep(0.1)
@@ -49,6 +52,7 @@ def passwd(txt , max):
     print(Fore.WHITE)
 
     form = input(Fore.LIGHTRED_EX+"Enter Options List : ")
+
 
     if form == "1":
         os.system("cls" or "clear")
@@ -65,6 +69,7 @@ def passwd(txt , max):
         a.write(txt + password_2 + max + "\n")
 
     elif form == "3":
+        
         os.system("cls" or "clear")
         print(Fore.CYAN+"Password Maker : " + txt + password_3 + max)
         print(Fore.MAGENTA+"Saved Password To 'password.txt'")
@@ -72,6 +77,7 @@ def passwd(txt , max):
         a.write(txt + password_3 + max + "\n")
 
     elif form == "4":
+        
         os.system("cls" or "clear")
         print(Fore.CYAN+"Password Maker : " + txt + password_4 + max)
         print(Fore.MAGENTA+"Saved Password To 'password.txt'")
@@ -82,9 +88,15 @@ def passwd(txt , max):
 
 def create_passwd():
     tick = input("Enter Text To Password : ")
+    os.system("cls" or "clear")
+    print(banner)
     max = input("Enter Max To Password : ")
-
+    os.system("cls" or "clear")
+    print(banner)
     input("This Anyting...")
+
+    os.system("cls" or "clear")
+    print(banner)
 
     passwd(tick, max)
 
@@ -108,6 +120,10 @@ def reset_file():
         restet_dir = open("password.txt" , "r+")
         restet_dir.truncate(0)
 
+        os.system("cls" or "clear")
+
+        print(banner)
+
         print(Fore.RED+"\n[!] Reseting Password !!!")
 
 
@@ -122,10 +138,12 @@ try:
     print(Fore.RED+"[2] "+Fore.GREEN+"Acsess View Saved Passowrd! \n")
     time.sleep(0.1)
     print(Fore.RED+"[3] "+Fore.GREEN+"Acsess Reset List Password! \n")
-    time.sleep(1.0)
+    time.sleep(0.1)
     print(Fore.RED+"[4] "+Fore.GREEN+"Acsess Backup List Password! \n")
-    time.sleep(1.0)
-    print(Fore.RED+"[5] "+Fore.GREEN+"Acsess Update Maker Lists! \n")
+    time.sleep(0.1)
+    print(Fore.RED+"[5] "+Fore.GREEN+"Acsess Reset App Home! \n")
+    time.sleep(0.1)
+    print(Fore.RED+"[6] "+Fore.GREEN+"Acsess Update Maker Lists! \n")
     
 
     opt = input(Fore.LIGHTYELLOW_EX+"\n\nEnter Options \n  >>> ")
@@ -149,6 +167,10 @@ try:
         print(banner)
         class_backup.__backup__()
     elif opt == "5":
+        os.system("cls" or "clear")
+        print(banner)
+        class_reset.__reseting__()
+    elif opt == "6":
         os.system("cls" or "clear")
         print(banner)
         class_updates.__start__()
