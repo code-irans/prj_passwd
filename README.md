@@ -41,7 +41,8 @@ Enter Options
 ```Bash, Zsh
 git clone https://github.com/code-irans/prj_passwd
 cd prj_passwd
-installion/install_liunx.sh
+cd installion
+./install_liunx.sh
 python3 mekar_pass.py
 ```
 
@@ -50,7 +51,8 @@ python3 mekar_pass.py
 Dowload To Github : https://github.com/code-irans/prj_passwd/archive/refs/heads/main.zip
 extract File 'main.zip'
 cd prj_passwd-main
-installion/install_windows.bat
+cd installion
+install_windows.bat
 python mekar_pass.py
 ```
 
