@@ -56,6 +56,7 @@ def passwd(txt , max):
 
     if form == "1":
         os.system("cls" or "clear")
+        print(banner)
         print(Fore.CYAN+"Password Maker : " + txt + password_1 + max)
         print(Fore.MAGENTA+"Saved Password To 'password.txt'")
         a = open("password.txt" , "a")
@@ -63,6 +64,7 @@ def passwd(txt , max):
 
     elif form == "2":
         os.system("cls" or "clear")
+        print(banner)
         print(Fore.CYAN+"Password Maker : " + txt + password_2 + max)
         print(Fore.MAGENTA+"Saved Password To 'password.txt'")
         a = open("password.txt" , "a")
@@ -71,6 +73,7 @@ def passwd(txt , max):
     elif form == "3":
         
         os.system("cls" or "clear")
+        print(banner)
         print(Fore.CYAN+"Password Maker : " + txt + password_3 + max)
         print(Fore.MAGENTA+"Saved Password To 'password.txt'")
         a = open("password.txt" , "a")
@@ -79,6 +82,7 @@ def passwd(txt , max):
     elif form == "4":
         
         os.system("cls" or "clear")
+        print(banner)
         print(Fore.CYAN+"Password Maker : " + txt + password_4 + max)
         print(Fore.MAGENTA+"Saved Password To 'password.txt'")
         a = open("password.txt" , "a")
@@ -133,17 +137,17 @@ try:
     print(banner)
 
     time.sleep(0.1)
-    print(Fore.RED+"[1] "+Fore.GREEN+"Acsess Make Password! \n")
+    print(Fore.RED+"[1] "+Fore.GREEN+"App Make Password! \n")
     time.sleep(0.1)
-    print(Fore.RED+"[2] "+Fore.GREEN+"Acsess View Saved Passowrd! \n")
+    print(Fore.RED+"[2] "+Fore.GREEN+"App View Saved Passowrd! \n")
     time.sleep(0.1)
-    print(Fore.RED+"[3] "+Fore.GREEN+"Acsess Reset List Password! \n")
+    print(Fore.RED+"[3] "+Fore.GREEN+"App Reset List Password! \n")
     time.sleep(0.1)
-    print(Fore.RED+"[4] "+Fore.GREEN+"Acsess Backup List Password! \n")
+    print(Fore.RED+"[4] "+Fore.GREEN+"App Backup List Password! \n")
     time.sleep(0.1)
-    print(Fore.RED+"[5] "+Fore.GREEN+"Acsess Reset App Home! \n")
+    print(Fore.RED+"[5] "+Fore.GREEN+"App Reset App Home! \n")
     time.sleep(0.1)
-    print(Fore.RED+"[6] "+Fore.GREEN+"Acsess Update Maker Lists! \n")
+    print(Fore.RED+"[6] "+Fore.GREEN+"App Update Maker Lists! \n")
     
 
     opt = input(Fore.LIGHTYELLOW_EX+"\n\nEnter Options \n  >>> ")
